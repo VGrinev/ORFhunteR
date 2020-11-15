@@ -26,7 +26,6 @@
 #'                        package="ORFhunteR")
 #' seq_orfs <- getSeqORFs(orfs=orf_path,
 #'                        tr=trans_path,
-#'                        frt="fasta",
 #'                        genome="BSgenome.Hsapiens.UCSC.hg38",
 #'                        workDir=NULL)
 #' @export

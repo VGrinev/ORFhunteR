@@ -23,9 +23,9 @@
 #' gtf_path <- system.file("extdata",
 #'                         "Set.trans_sequences.gtf",
 #'                         package="ORFhunteR")
-#' ptcs <- finderPTC(orfs=orfs_path,
-#'                   gtf=gtf_path,
-#'                   workDir=NULL)
+#' ptcs <- findPTCs(orfs=orfs_path,
+#'                  gtf=gtf_path,
+#'                  workDir=NULL)
 #' @export
 
 findPTCs <- function(orfs, gtf, workDir=NULL){

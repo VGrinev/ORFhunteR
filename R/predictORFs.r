@@ -5,7 +5,7 @@
 #' @param genome character string giving the name of BSgenome data package with
 #'     full genome sequences. Default value is "BSgenome.Hsapiens.UCSC.hg38".
 #' @param prThr probability threshold for the "winning" class of ORFs.
-#'     Default value is NULL.
+#'     Default value is 0
 #' @param model character string giving the connection or full path to the file
 #'     from which the classification model is read.
 #' @param workDir character string giving the path to and name of work
@@ -22,7 +22,7 @@
 predictORF <- function(tr,
                        genome="BSgenome.Hsapiens.UCSC.hg38",
                        model,
-                       prThr=NULL,
+                       prThr=0,
                        workDir=NULL){
 ### Loading of the experimental transcripts as a list of character strings.
 exp_trans <- loadTrExper(tr=tr, genome=genome, workDir=workDir)
